@@ -15,6 +15,8 @@ jobs:
 
     - name: run-vcpkg
       uses: lukka/run-vcpkg@v10.7
+      with:
+        vcpkgGitCommitId: 6f7ffeb18f99796233b958aaaf14ec7bd4fb64b2
 
     - name: Configure CMake
       run: vcpkg install opengl 
